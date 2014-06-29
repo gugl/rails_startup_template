@@ -107,7 +107,7 @@ gem_group :test do
 
   gem 'cucumber-rails', :require=>false
   gem 'poltergeist'
-  gem 'database_cleaner', '1.0.1'
+  gem 'database_cleaner'
   gem 'email_spec'
   gem 'launchy'
 end
