@@ -218,6 +218,9 @@ run "echo '@import \"bourbon\";' >>  app/assets/stylesheets/application.css.scss
 # ==================================================
 rake 'haml:replace_erbs'
 
+# Remove the --warning option from .rspec
+gsub_file '.rspec', /--warnings\n/, ''
+
 # Ignore rails doc files, Vim/Emacs swap files, .DS_Store, and more
 # ===================================================
 run "cat << EOF >> .gitignore
